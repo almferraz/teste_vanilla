@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------- TAGs --------*/
+footer {
+  width: 100%;
+  height: 213px;
+  background: black;
+  color: white;
+}
+
+/* ------------ IDs -------------- */
+#topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#busca {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  border-bottom: #ccc solid 1px;
+}
+#busca > input {
+  width: 600px;
+  border: none;
+}
+#mBusca {
+  display: none;
+}
+#user {
+  display: flex;
+}
+#mBanner {
+  display: none;
+}
+#banner {
+  width: 1680px;
+  margin: auto;
+  padding: 23px 0;
+}
+#vitrine {
+  display: flex;
+  justify-content: space-around;
+  width: 1248px;
+  height: 407px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 5px;
+}
+#news {
+  display: flex;
+  justify-content: center;
+}
+#footer {
+  height: 213px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* --------------- CLASSEs  ------------- */
+.mImg {
+  display: none;
+}
+.container {
+  width: 1248px;
+  margin: auto;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  background: white;
+}
+
+.cart > button {
+  width: 125px;
+  height: 32px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+.estrelas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cart > h2 {
+  margin-bottom: 4px;
+}
+.cart > p {
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news > input {
+  width: 280px;
+  height: 48px;
+  border: none;
+  margin: 17px;
+}
+.news > button {
+  width: 140px;
+  height: 48px;
+  background: black;
+  color: white;
+  font-size: 14;
+  font-weight: bold;
+}
+.center > h2 {
+  text-align: center;
+}
+.localizacao {
+  margin-bottom: 10px;
+}
+.localizacao > h2 {
+  margin-bottom: 15px;
+}
+.separador {
+  width: 60px;
+  height: 5px;
+  background: white;
+  margin-bottom: 15px;
+}
+.localizacao > p {
+  margin-bottom: 10px;
+}
+.contatoFooter {
+  width: 220px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: black;
+  padding: 10px 35px;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 5px;
+}
+.contatoFooter > p {
+  width: 127px;
+  margin: 0 30px;
+}
+.created {
+  display: flex;
+}
+.created_interno {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+@media (max-width: 900px) and (orientation: portrait) {
+  /* ------------ TAGs ---------------------*/
+  footer {
+    height: 450px;
+  }
+  /* ------------- IDs ----------------------*/
+  #topo {
+    width: 80%;
+  }
+  #busca {
+    display: none;
+  }
+  #user {
+    display: none;
+  }
+  #banner {
+    width: 100%;
+    display: none;
+  }
+  #vitrine {
+    width: 80%;
+  }
+  #mBusca {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #ccc solid 1px;
+    margin: 15px auto;
+  }
+  #mBusca > input {
+    width: 80%;
+    border: none;
+  }
+  #mBanner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #news {
+    width: 100%;
+    flex-direction: column;
+  }
+  #footer {
+    flex-direction: column;
+  }
+  #vitrine {
+    margin-bottom: 10px;
+  }
+
+  /* ------------ CLASSEs ------------------*/
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .cart {
+    width: 50%;
+  }
+  .cartP {
+    font-size: 9px;
+  }
+  .cart > img {
+    width: 150px;
+  }
+  .mImg {
+    display: block;
+  }
+  .news {
+    flex-direction: column;
+  }
+  .news > button {
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+}
