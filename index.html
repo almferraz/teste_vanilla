@@ -22,9 +22,9 @@
       <img src="img/user.png" alt="user">
       <p>Minha conta</p>
     </div>
-    <div>
+    <div id="cars">
       <img src="img/car.png" alt="">
-      <div></div>
+      <div id="carItens"></div>
 
     </div>
   </div>
@@ -70,9 +70,11 @@
     <div class="center">
       <h2>Participe de nossas news com promoções e novidades</h2>
       <div>
-        <form class="news">
-          <input type="text" name="nome" placeholder="Digite seu nome">
-          <input type="mail" name="email" placeholder="Digite seu email">
+        <form class="news" id="newslatter">
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          <span class="error"></span>
+          <input type="mail" id="email" name="email" placeholder="Digite seu email" required>
+          <span class="error"></span>
           <button>Eu quero!</button>
         </form>
       </div>

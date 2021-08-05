@@ -26,12 +26,23 @@ footer {
 #busca > input {
   width: 600px;
   border: none;
+  outline: none;
 }
 #mBusca {
   display: none;
 }
 #user {
   display: flex;
+}
+#cars {
+  display: flex;
+}
+#carItens {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: red;
+  margin: 0 5px;
 }
 #mBanner {
   display: none;
@@ -110,6 +121,7 @@ footer {
   height: 48px;
   border: none;
   margin: 17px;
+  outline: none;
 }
 .news > button {
   width: 140px;
