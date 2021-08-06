@@ -81,6 +81,9 @@ footer {
   width: 1248px;
   margin: auto;
 }
+.campoVazio {
+  border: solid 1px red;
+}
 .cart {
   display: flex;
   flex-direction: column;
@@ -89,7 +92,6 @@ footer {
   width: 23%;
   background: white;
 }
-
 .cart > button {
   width: 125px;
   height: 32px;
