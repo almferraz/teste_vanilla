@@ -72,6 +72,7 @@ footer {
   width: 1248px;
   margin: auto;
 }
+
 .vitrineModelo {
   display: none;
 }
@@ -92,14 +93,13 @@ footer {
   width: 23%;
   background: white;
 }
-.cartModelo > button {
+.cartComprar {
   width: 125px;
   height: 32px;
   border-radius: 5px;
   background: black;
   color: white;
 }
-
 .news {
   display: flex;
   justify-content: center;
@@ -207,22 +207,28 @@ footer {
   #footer {
     flex-direction: column;
   }
-  #vitrine {
-    margin-bottom: 10px;
-  }
 
   /* ------------ CLASSEs ------------------*/
   .container {
     width: 80%;
     margin: auto;
   }
-  .cart {
+  .vitrine {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .cartModelo {
     width: 50%;
   }
   .cartP {
     font-size: 9px;
   }
-  .cart > img {
+  .cartModelo > img {
     width: 150px;
   }
   .mImg {
