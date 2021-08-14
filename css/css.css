@@ -52,15 +52,6 @@ footer {
   margin: auto;
   padding: 23px 0;
 }
-#vitrine {
-  display: flex;
-  justify-content: space-around;
-  width: 1248px;
-  height: 407px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  padding: 5px;
-}
 #news {
   display: flex;
   justify-content: center;
@@ -81,10 +72,19 @@ footer {
   width: 1248px;
   margin: auto;
 }
-.campoVazio {
-  border: solid 1px red;
+.vitrineModelo {
+  display: none;
 }
-.cart {
+.vitrine {
+  display: flex;
+  justify-content: space-around;
+  width: 1248px;
+  height: 407px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 5px;
+}
+.cartModelo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,27 +92,14 @@ footer {
   width: 23%;
   background: white;
 }
-.cart > button {
+.cartModelo > button {
   width: 125px;
   height: 32px;
   border-radius: 5px;
   background: black;
   color: white;
 }
-.estrelas {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.cart > h2 {
-  margin-bottom: 4px;
-}
-.cart > p {
-  margin-bottom: 4px;
-  font-size: 11px;
-}
+
 .news {
   display: flex;
   justify-content: center;

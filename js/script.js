@@ -1,13 +1,23 @@
+const q = (e) => document.querySelector(e);
+const qa = (e) => document.querySelectorAll(e);
+
 const vitrineApi = fetch('https://corebiz-test.herokuapp.com/api/v1/products');
-const cartImg = document.querySelector('.cartImg');
 
 vitrineApi
   .then((r) => r.json())
   .then((lista) => {
-    console.log(lista[0].imageUrl);
-    cartImg.textContent(lista[0].imageUrl);
-    lista.map((produtos) => {
-      console.log(produtos);
+    // console.log(lista);
+
+    lista.map((item, index) => {
+      // console.log(item);
+      let itens = q('.vitrineModelo .cartModelo').cloneNode(true);
+      // preencher as informações
+      itens.querySelector('.imageUrl img').src = item.imageUrl;
+      itens.querySelector('.stars').innerHTML = item.stars;
+      itens.querySelector('.productName').innerHTML = item.productName;
+      itens.querySelector('.price').innerHTML = `R$ ${item.price}`;
+
+      q('.vitrine').append(itens);
     });
   });
 
